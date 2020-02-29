@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.site {
+    width: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.backV {
+    position: absolute;/*При изменении размера окна страницы, блок не двигается вместе с отсальным контентом. Возможно воспльзоваться relativ, но тогда элемент нужно будет закинуть в отдельный div*/
+    overflow: hidden;
+    display: flex;
+}
+
+.Vlight p {
+    font-size: 300px;
+    font-weight: bold;
+    color: #187FE7;
+    opacity: 0.1;
+}
+
+.banner {
+    display: flex;
+    overflow: hidden;
+    margin: 50px 0;
+}
+
+.banner .background {
+    background: url(../images/backgroundBaner.jpg) no-repeat #272830;/*проработать бэкграунд, точно спозиционировать*/
+    background-origin: padding-box;
+    background-position: -50px 0px;
+    background-size: auto 600px;
+    width: 480px;
+    height: 576px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.banner .backgroundWhite {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 544px;/*Растянуть блок без использования ширины*/
+}
+
+.backgroundWhite h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: #222222;
+    text-transform: capitalize;
+
+}
+
+.background p {
+    font-family: 'Montserrat', sans-serif;
+    color: #222222;
+    font-weight: 500;
+    font-size: 200px;
+    padding: 30px 45px;
+}
+
+.background .bigV {
+    background-color: #ffffff;
+    border-left: 24px solid #187FE7;
+}
+
+.box {
+    display: flex;
+    position: relative;
+    order: -1;
+    top: 177px;
+}
+
+.box .square {
+    width: 50px;
+    height: 50px;
+    background-color: #187FE7;
+}
+
+.banner .backV {
+    top: 370px;
+    left: 1000px;
+    width: 185px;
+    height: 255px;
+}
+
+
+.snapshot {
+    display: flex;
+}
+
+.aligment {
+    width: 410px;
+    height: 576px;
+    display: flex;
+    background-color: #272830;
+    border-right: 12px solid #187FE7;
+    margin-right: 60px;
+}
+
+.aligment .textSnapshot {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+
+
+.textSnapshot h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.textSnapshot p {
+    font-size: 16px;
+    color: #187FE7;
+    text-transform: uppercase;
+}
+
+.snapshot .listSnapshot {
+    display: flex;
+    width: 600px;
+    padding: 35px 0;
+}
+
+.listSnapshot ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.listSnapshot > ul > li {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 30px;
+    
+}
+
+.listSnapshot > ul li:last-child {
+    padding-bottom: 0;
+}
+
+
