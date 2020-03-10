@@ -3,12 +3,13 @@
     padding: 0;
 }
 
-.site {
+.container {
     width: 100%;
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
-
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 h2 {
@@ -40,11 +41,11 @@ p {
 .banner {
     display: flex;
     overflow: hidden;
-    margin: 50px 0;
+    /*margin: 50px 0;*/
 }
 
 .banner .background {
-    background: url(../images/backgroundBaner.jpg) no-repeat #272830;/*проработать бэкграунд, точно спозиционировать*/
+    background: url(../images/backgroundBaner.jpg) no-repeat rgb(15%, 16%, 19%, 0.5);/*проработать бэкграунд, точно спозиционировать*/
     background-origin: padding-box;
     background-position: -50px 0px;
     background-size: auto 600px;
@@ -98,7 +99,7 @@ p {
 }
 
 .banner .backV {
-    top: 370px;
+    top: 430px;
     left: 1000px;
     width: 185px;
     height: 255px;
@@ -118,7 +119,7 @@ p {
     margin-right: 60px;
 }
 
-.aligment .textSnapshot {
+.aligment .headerSnapshot {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -128,12 +129,12 @@ p {
 
 
 
-.textSnapshot h2 {
+.headerSnapshot h2 {
     color: #fff;
     margin-bottom: 20px;
 }
 
-.textSnapshot p {
+.headerSnapshot p {
     font-size: 16px;
     color: #187FE7;
     text-transform: uppercase;
@@ -154,11 +155,26 @@ p {
 .listSnapshot > ul > li {
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 30px;
+    /*list-style-type: none;*/
+    
     
 }
 
-.listSnapshot > ul li:last-child {
-    padding-bottom: 0;
+/*.listSnapshot ul li::before {
+    content: "\0056";
+    transform: rotate(90deg);
+    
+    
+}*/
+
+.invest {
+    display: flex;
 }
 
+.logoInvest {
+    width: 544px;
+}
 
+.logoInvest {
+    display: grid;
+}
