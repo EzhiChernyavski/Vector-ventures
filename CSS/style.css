@@ -714,10 +714,6 @@ p {
     margin-right: 20px;
 }
 
-.logo-partners img {
-    
-}
-
 .item-partners h3 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -743,4 +739,21 @@ p {
 .partners .v-light p {
     font-size: 500px;
     line-height: 610px;
+}
+
+.pipeline-other {
+    height: 576px;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.pipeline-other .dark-line {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 215px;
+    background-color: #272830;
+    z-index: -5;
 }
