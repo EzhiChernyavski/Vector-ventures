@@ -696,7 +696,8 @@ p {
     width: 1000px;
     height: 490px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     flex-wrap: wrap;
     background-color: #fff;
     box-sizing: border-box;
@@ -740,6 +741,9 @@ p {
     font-size: 500px;
     line-height: 610px;
 }
+
+
+
 
 .pipeline-other {
     height: 576px;
