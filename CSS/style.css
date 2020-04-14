@@ -90,6 +90,7 @@ p {
 .background-white h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
+    line-height: 61px;
     font-weight: 500;
     color: #222222;
     text-transform: capitalize;
@@ -886,12 +887,119 @@ p {
 
 
 
+.general {
+    height: 576px;
+    display: flex;
+}
+
+.general .main {
+    width: 910px;
+    display: flex;
+    flex-direction: column;
+}
+
+.general .main .header {
+    position: relative;
+    top: 55px;
+    left: 115px;
+    width: 100%;
+    height: 176px;
+}
+
+.general .main .header p {
+    opacity: 0.6;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.general .main .dark-back {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 400px;
+    background-color: #272830;
+}
+
+.general .info {
+    position: relative;
+    display: flex;
+
+    width: 735px;
+    height: 250px;
+    background-color: #fff;
+    margin-top: 22px;
+}
+
+.general .info:before {
+    position: absolute;
+    top: 40px;
+    left: -7px;
+    content: '';
+    width: 14px;
+    height: 170px;
+    background-color: #187FE7;
+}
+
+.general .info ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 40px;
+}
+
+.info ul li {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    list-style-type: none;
+}
+
+.info ul li:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #187FE7;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left: -15px;
+}
+
+.info ul li .color {
+    color: #187FE7;
+}
+
+.info ul li .ident {
+    margin-left: 20px;
+    color: #187FE7;
+}
+
+.general .light-back {
+    position: relative;
+    width: 114px;
+}
+
+.general .square {
+    display: inline-block;
+    top: 30px;
+    left: 30px;
+}
+
+.main .dark-back .v-dark {
+    display: inline-block;
+    top: 187px;
+    left: -45px;
+}
+
+
+
 .pipeline-other {
     height: 576px;
     display: flex;
     flex-direction: column; 
 }
-
 
 .pipeline-other .dark-line {
     position: relative;
