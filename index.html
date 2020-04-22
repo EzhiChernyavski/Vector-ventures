@@ -6,38 +6,66 @@
 	<title>Vector ventures</title>
 	<link rel="stylesheet" href="CSS/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
 </head>
 <body>
+
+	<nav class="navbar">
+		<h2>Logo</h2>
+		<div class="links-wrapper">
+			<ul class="links">
+				<li><a href="#main" class="active"></a></li>
+				<li><a href="#snapshot">Snapshot</a>
+					<ul class="sub-links">
+						<li><a href="#snapshot-conditions">Snapshot-conditions</a></li>
+					</ul>
+				</li>
+				<li><a href="#investment">Investment</a></li>
+				<li><a href="#we">We</a></li>
+				<li><a href="#offer">Offer</a></li>
+				<li><a href="#projects">Projects</a>
+					<ul class="sublinks">
+						<li><a href="#projects-other">Projects-other</a></li>
+						<li><a href="#projects-other2">Projects-other2</a></li>
+					</ul>
+				</li>
+				<li><a href="#team">Team</a></li>
+				<li><a href="#partners">Partners</a></li>
+				<li><a href="#general">General conditions</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
 
 	<div class="site">
 
 		<div class="container">
-			<div class="banner">
-				<div class="background">
+			<section class="banner" id="main">
+				<div class="background dark-back">
 					<div class="big-v">
 						<p>V</p>
 						<div class="square"></div>
 					</div>
 				</div>
-				<div class="background-white">
-					<h1>Vector</h1> <!--Проработать высоту между h1-->
+				<div class="white-back">
+					<h1>Vector</h1>
 					<h1 class="indent">ventures</h1>
 				</div>
 				<div class="v-light">
 					<p>V</p>
 				</div>
-			</div>
+			</section>
 		</div>
 
 		<div class="container">
-			<div class="snapshot">
-				<div class="aligment">
+			<section class="snapshot" id="snapshot">
+				<div class="aligment dark-back">
 					<div class="header-snapshot">
 						<h2>snapshot</h2>
 						<p>belarus</p>
 					</div>
 				</div>
-				<div class="list-snapshot">
+				<div class="list-snapshot white-back">
 					<ul>
 						<li>100 trillions of dollars were invested over here during the Soviet period</li>
 						<li>That is one of the easiest ways to enter the global market</li>
@@ -51,12 +79,12 @@
 				<div class="v-dark">
 					<p>V</p>
 				</div>
-			</div>
+			</section>
 		</div>
 
 		<div class="container">
-			<div class="invest">
-				<div class="info-invest">
+			<section class="invest" id="investment">
+				<div class="info-invest white-back">
 					<div class="header-invest">
 						<h2>Time to invest</h2>
 						<p>World media about the<br />
@@ -64,58 +92,82 @@
 					</div>
 					<div class="logo-invest">
 							<ul>    
-								<li><img src="" alt=""></li>
-								<li><img src="" alt=""></li>
-								<li><img src="" alt=""></li>
-								<li><img src="" alt=""></li>
+								<li>
+									<a href="https://www.forbes.com/sites/forbesinternational/2018/05/16/a-booming-entrepreneurial-heartbeat-in-belarus/#22bc67f6156e" target="_blank"><img src="images/Investors/forbes.png" alt="forbes"></a>
+								</li>
+								<li>
+									<a href="https://ostpol.de/beitrag/5344-komputerismus-in-belarus" target="_blank"><img src="images/Investors/ostpol(2).png" alt="ostpol"></a>
+								</li>
+								<li>
+									<a href="https://www.ft.com/content/c2ef3362-0611-11ea-a958-5e9b7282cbd1" target="_blank"><img src="images/Investors/Financial-Times.png" alt="Financial-Times"></a>
+								</li>
+								<li>
+									<a href="https://www.republicworld.com/world-news/rest-of-the-world-news/pompeo-visits-us-embassy-tech-park-in-minsk.html" target="_blank"><img src="images/Investors/repablic(2).png" alt="repablic"></a>
+								</li>
 							</ul>
 					</div>
 				</div>
-				<div class="img-invest">
+				<div class="img-invest dark-back">
 					<div class="gallery">
-						<img class="grid-img img1" src="images/imgInvest1.jpg" alt="#">
-						<img class="grid-img img2" src="images/imgInvest2.jpg" alt="#">
-						<img class="grid-img img3" src="images/imgInvest3.jpg" alt="#">
-						<img class="grid-img img4" src="images/imgInvest4.png" alt="#">
-						<img class="grid-img img5" src="images/imgInvest5.jpg" alt="#">
+						<img class="grid-img img1" src="images/Invest/imgInvest1.jpg" alt="#">
+						<img class="grid-img img2" src="images/Invest/imgInvest2.jpg" alt="#">
+						<img class="grid-img img3" src="images/Invest/imgInvest3.jpg" alt="#">
+						<img class="grid-img img4" src="images/Invest/imgInvest4.png" alt="#">
+						<img class="grid-img img5" src="images/Invest/imgInvest5.jpg" alt="#">
 					</div>
 					<div class="v-dark">
 						<p>V</p>
 					</div>
 					<!--Вставить square-->
 				</div>
-			</div>
+			</section>
 		</div>
 
 		<div class="container">
-			<div class="we">
-				<div class="darkback">
+			<section class="we" id="we">
+				<div class="header-line dark-back">
 					<div class="we-header">
 						<h2>Who we are</h2>
 					</div>
 				</div>
-				<div class="info-we">
+				<div class="info-we white-back">
+					<div class="bac-img"></div>
 					<div class="info-block">
 						<div class="description">
-							<div class="box2"></div>
+							<a href="https://youtu.be/Df9k2jko_MU" target="_blank">
+								<div class="box2">
+									<div class="triangle"></div>
+								</div>
+							</a>
 							<p>EnCata (Engineering Catalyst) is one-stop-development engineering and consultancy service focused on product development, design engineering and prototype manufacturing. EnCata's R&D facilities are also registered as Technopark with a wide range of industrial machinery for prototype design and manufacturing.</p>
 						</div>
 						<div class="description">
-							<div class="box3"></div>
+							<a href="https://www.figma.com/proto/OjhK0EtJa3b6dFdTUFyYca/Presentation-Technopark?node-id=1:218&viewport=836,1055,0.5042458176612854&scaling=contain" target="_blank">
+								<div class="box3">
+									<div class="arrow"></div>
+								</div>
+							</a>
 							<p>Within EnCata framework we developed a unique ecosystem for startups, opened a MakeIT.center fablab and established a CypherHub Technology Fund</p>
 						</div>
 						<div class="description">
-							<div class="box3"></div>
+							<a href="https://cypherhub.technology/login/" target=" _blank">
+								<div class="box3">
+									<div class="arrow"></div>
+								</div>
+							</a>
 							<p>More than 40 projects in CypherHub portfolio</p>
 						</div>
 					</div>
-				</div>
-			</div>
+					<div class="v-light">
+						<p>V</p>
+					</div>
+				</div>	
+			</section>
 		</div>
 
 		<div class="container">
-			<div class="offer">
-				<div class="whiteback">
+			<section class="offer" id="offer">
+				<div class="white-offer white-back">
 					<div class="header">
 						<div class="square"></div>
 						<h2>What we offer</h2>
@@ -127,56 +179,76 @@
 						</div>
 						<div class="conveyor">
 							<div class="img-conveyor">
-								<div class="point"><img src="./images/conveyor1.png" alt="conveyor1"></div>
-								<div class="point"><img src="./images/conveyor2.png" alt="conveyor2"></div>
-								<div class="point"><img src="./images/conveyor3.png" alt="conveyor3"></div>
-								<div class="point"><img src="./images/conveyor4.png" alt="conveyor4"></div>
-								<div class="point"><img src="./images/conveyor5.png" alt="conveyor5"></div>
-								<div class="point"><img src="./images/conveyor6.png" alt="conveyor6"></div>
-								<div class="point"><img src="./images/conveyor7.png" alt="conveyor7"></div>
-								<div class="point"><img src="./images/conveyor8.png" alt="conveyor8"></div>
-								<div class="point"><img src="./images/conveyor9.png" alt="conveyor9"></div>
+								<div class="point"><img src="./images/Conveyor/conveyor1.png" alt="conveyor1"></div>
+								<div class="point"><img src="./images/Conveyor/conveyor2.png" alt="conveyor2"></div>
+								<div class="point"><img src="./images/Conveyor/conveyor3.png" alt="conveyor3"></div>
+								<div class="point"><img src="./images/Conveyor/conveyor4.png" alt="conveyor4"></div>
+								<div class="point"><img src="./images/Conveyor/conveyor5.png" alt="conveyor5"></div>
+								<div class="point"><img src="./images/Conveyor/conveyor6.png" alt="conveyor6"></div>
+								<div class="point"><img src="./images/Conveyor/conveyor7.png" alt="conveyor7"></div>
+								<div class="point"><img src="./images/Conveyor/conveyor8.png" alt="conveyor8"></div>
+								<div class="point"><img src="./images/Conveyor/conveyor9.png" alt="conveyor9"></div>
 							</div>
 							<div class="descript"><p>We have our engineering pipeline that turns<br />
-							startup projects into final products on the<br /> 
+							startup projects into final products on the<br />
 							market</p></div>
 						</div>
-					</div><!--Почему если закинуть v-light в whiteback оно не позиционируется -->
+					</div>
 				</div>
-				<div class="back"></div>
+				<div class="dark-offer dark-back"></div>
 				<div class="v-light">
 					<p>V</p>
 				</div>
-			</div>
+			</section>
 		</div>
 
 		<div class="container">
-			<div class="pipeline">
+			<section class="pipeline" id="projects">
 				<div class="line">
-					<div class="dark-line">
+					<div class="dark-line dark-back">
 						<h2>Pipeline</h2>
 						<div class="project">
-							<img src="./images/pipeline1.png" alt="Fir">
+							<img src="./images/Pipline/pipeline1.png" alt="Fir">
 							<h3>FIR</h3>
 							<p>Quick-mounting construction with equipped internal environment</p>
+							<a href="https://youtu.be/UIofsWPDmGc" target="_blank">
+								<div class="link-box">
+									<div class="triangle"></div>
+								</div>
+							</a>
 						</div>
 						<div class="project">
-							<img src="./images/pipeline2.png" alt="Aerocapsule">	
+							<img src="./images/Pipline/pipeline2.png" alt="Aerocapsule">	
 							<h3>Aerocapsule</h3>
 							<p>Personal A+ office installed in previously inappropriate places</p>
+							<a href="https://youtu.be/AePpewqH2gg" target="_blank">
+								<div class="link-box">
+									<div class="triangle"></div>
+								</div>
+							</a>
 						</div>
 						<div class="project">
-							<img src="./images/pipeline3.png" alt="SmartCork">
+							<img src="./images/Pipline/pipeline3.png" alt="SmartCork">
 							<h3>SmartCork</h3>
 							<p>A source of precision, data & security of any liquid in any bottle</p>
+							<a href="https://youtu.be/wjiCRIfFzy8" target="_blank">
+								<div class="link-box">
+									<div class="triangle"></div>
+								</div>
+							</a>
 						</div>
 						<div class="project">
-							<img src="./images/pipeline4.png" alt="Cuby">
+							<img src="./images/Pipline/pipeline4.png" alt="Cuby">
 							<h3>Cuby</h3>
 							<p>Building technology for high quality, fast construction at honest pricing</p>
+							<a href="https://youtu.be/jnsKOegGLVE" target="_blank">
+								<div class="link-box">
+									<div class="triangle"></div>
+								</div>
+							</a>
 						</div>
 						<div class="project">
-							<img src="./images/pipeline5.png" alt="IoniteSoil">
+							<img src="./images/Pipline/pipeline5.png" alt="IoniteSoil">
 							<h3>Ionite Soil</h3>
 							<p>Ionite soil a new type of nutrient medium for growing plants</p>
 						</div>
@@ -184,33 +256,43 @@
 							<p>V</p>
 						</div>
 					</div>
-					<div class="light-line"></div>
+					<div class="light-line white-back"></div>
 				</div>
 				<div class="medicine">
-					<div class="dark-line">
+					<div class="dark-line dark-back">
 						<h2>Medicine</h2>
 						<div class="project">
-							<img src="./images/pipeline6.png" alt="ARIADNA">
+							<img src="./images/Pipline/Medicine/pipeline6.png" alt="ARIADNA">
 							<h3>Ariadna</h3>
 							<p>This technology allows combination and visualization of CT scan, MRI and Xray work as one</p>
+							<a href="https://youtu.be/QLDkeYzVcoM" target="_blank">
+								<div class="link-box">
+									<div class="triangle"></div>
+								</div>
+							</a>
 						</div>
 						<div class="project">
-							<img src="./images/pipeline7.png" alt="MedVR">
+							<img src="./images/Pipline/Medicine/pipeline7.png" alt="MedVR">
 							<h3>MedVR</h3>
 							<p>Most advance Virtual Reality trainer for surgeons in healthcare industry</p>
 						</div>
 						<div class="project">
-							<img src="./images/pipeline8.png" alt="Reyou Capsule">
+							<img src="./images/Pipline/Medicine/pipeline8.png" alt="Reyou Capsule">
 							<h3>Reyou Capsule</h3>
 							<p>The latest advances in sleep and stress reduction sciences are incorporated into brilliantly designed Reyou Capsule</p>
+							<a href="https://youtu.be/h9Y2cl0ugOk" target="_blank">
+								<div class="link-box">
+									<div class="triangle"></div>
+								</div>
+							</a>
 						</div>
 						<div class="project">
-							<img src="./images/pipeline9.png" alt="Hippocrates">
+							<img src="./images/Pipline/Medicine/pipeline9.png" alt="Hippocrates">
 							<h3>Hippocrates</h3>
 							<p>Hippocrates algorithms are designed explore cardiovascular risk in the process of auscultation</p>
 						</div>
 						<div class="project">
-							<img src="./images/pipeline10.png" alt="Angiolab">
+							<img src="./images/Pipline/Medicine/pipeline10.png" alt="Angiolab">
 							<h3>Angiolab</h3>
 							<p>AngioLab developed technology to heal ischemic heart diseases</p>
 						</div>
@@ -220,32 +302,32 @@
 							<p></p>
 						</div>-->
 					</div>
-					<div class="light-line"></div>
+					<div class="light-line white-back"></div>
 				</div>
-			</div>
+			</section>
 		</div>
 
 		<div class="container">
-			<div class="team">
-				<div class="dark-line">
+			<section class="team" id="team">
+				<div class="dark-line dark-back">
 					<h2>V Team</h2>
 					<div class="person">
-						<img src="./images/person1.png" alt="Michael Tavis">
+						<img src="./images/Person/person1.png" alt="Michael Tavis">
 						<h3>Michael Tavis</h3>
 						<p>Managing partner</p>
 					</div>
 					<div class="person">
-						<img src="./images/person2.png" alt="Oleg Kondrashov">
+						<img src="./images/Person/person2.png" alt="Oleg Kondrashov">
 						<h3>Oleg Kondrashov</h3>
 						<p>CEO</p>
 					</div>
 					<div class="person">
-						<img src="./images/person3.png" alt="Dr.Peter Dudin">
+						<img src="./images/Person/person3.png" alt="Dr.Peter Dudin">
 						<h3>Dr.Peter Dudin</h3>
 						<p>Managing director</p>
 					</div>
 					<div class="person">
-						<img src="./images/person4.png" alt="Rod Robertson">
+						<img src="./images/Person/person4.png" alt="Rod Robertson">
 						<h3>Rod Robertson</h3>
 						<p>Managing partner</p>
 					</div>
@@ -253,110 +335,110 @@
 						<p>V</p>
 					</div>
 				</div>
-				<div class="light-line"></div>
-			</div>
+				<div class="light-line white-back"></div>
+			</section>
 		</div>
 
 		<div class="container">
-			<div class="partners">
-				<div class="light-back">
+			<section class="partners" id="partners">
+				<div class="column-white white-back">
 					<h2>Partners</h2>
 					<div class="main-content">
 						<div class="item-partners ">
-							<img class="logo-partners" src="./images/partners/partners1.png" alt="HTP">
-							<div class="partbers-info">
+							<div class="logo-partners"><img src="./images/Partners/partners1.png" alt="HTP"></div>
+							<div class="partners-info">
 								<h3>HTP</h3>
 								<p>A special economic zone in Belarus with specific regulatory and fiscal frameworks for the IT business development </p>
 							</div>
 						</div>
 						<div class="item-partners">
-							<img class="logo-partners" src="./images/partners/partners2.png" alt="Skolkovo">
-							<div class="partbers-info">
+							<div class="logo-partners"><img src="./images/Partners/partners2.png" alt="Skolkovo"></div>
+							<div class="partners-info">
 								<h3>Skolkovo</h3>
 								<p>An existing modern Scientific & Technological Innovation Complex with particular emphasis on the development and commercialization of new technologies located in Moscow</p>
 							</div>
 						</div>
 						<div class="item-partners">
-							<img class="logo-partners" src="./images/partners/partners3.png" alt="EDGEof ">
-							<div class="partbers-info">
+							<div class="logo-partners"><img src="./images/Partners/partners3.png" alt="EDGEof "></div>
+							<div class="partners-info">
 								<h3>EDGEof </h3>
 								<p>EDGEof is a collaboration platform where innovative projects are co-created among it’s unique network of creators, researchers, major corporations, startups, students, investors, artists, and public institutions. EDGEof is a game-changer and creator itself, taking a systemic approach to scaling solutions to the world’s biggest challenges.</p>
 							</div>
 						</div>
 						<div class="item-partners">
-							<img class="logo-partners" src="./images/partners/partners4.png" alt="Buildit Accelerator">
-							<div class="partbers-info">
+							<div class="logo-partners"><img src="./images/Partners/partners4.png" alt="Buildit Accelerator"></div>
+							<div class="partners-info">
 								<h3>Buildit Accelerator</h3>
 								<p>Hardware-focused accelerator from Eastern Europe with a long history. Buildit is based in Riga and we are proud of recommending them for startups with POC prototypes, looking to focus their customer and product development at the pre-seed stage.</p>
 							</div>
 						</div>
 						<div class="item-partners">
-							<img class="logo-partners" src="./images/partners/partners5.png" alt="NORD Engineering">
-							<div class="partbers-info">
+							<div class="logo-partners"><img src="./images/Partners/partners5.png" alt="NORD Engineering"></div>
+							<div class="partners-info">
 								<h3>NORD Engineering</h3>
 								<p>NORD Engineering is an established ‘technology architect’ company dealing with mining, metallurgy and chemical industries, employing a scientific approach to plant and process equipment designs.</p>
 							</div>
 						</div>
 						<div class="item-partners">
-							<img class="logo-partners" src="./images/partners/partners6.png" alt="UNDP">
-							<div class="partbers-info">
+							<div class="logo-partners"><img src="./images/Partners/partners6.png" alt="UNDP"></div>
+							<div class="partners-info">
 								<h3>UNDP</h3>
 								<p>The United Nations Development Programme (UNDP) is the United Nations' global development network. It advocates for change and connects countries to knowledge, experience and resources to help people build a better life for themselves. </p>
 							</div>
 						</div>
 						<div class="item-partners">
-							<img class="logo-partners" src="./images/partners/partners7.png" alt="Industrio Ventures">
-							<div class="partbers-info">
+							<div class="logo-partners"><img src="./images/Partners/partners7.png" alt="Industrio Ventures"></div>
+							<div class="partners-info">
 								<h3>Industrio Ventures</h3>
 								<p>Industrio Ventures is the first Italian Hardware Startup Accelerator that invests in innovative product startups like Automotive and Smart Transportation, Digital Manufacturing, Robotics, BioTech, AgriTech and CleanTech by providing them with seed funds; entrepreneurial, technical and scientific skills for the development and prototyping; an extraordinary network of partner companies with a strong focus on CSR and ASAP. </p>
 							</div>
 						</div>
 						<div class="item-partners">
-							<img class="logo-partners" src="./images/partners/partners8.png" alt="EPower Corp">
-							<div class="partbers-info">
+							<div class="logo-partners"><img src="./images/Partners/partners8.png" alt="EPower Corp"></div>
+							<div class="partners-info">
 								<h3>EPower Corp</h3>
 								<p>EPower Corp is an American and Hong Kong owned and managed contract manufacturer. We work with hardware companies to help them transition from prototypes to low volume production to mass production. Startups and SME’s leverage themselves by utilizing our 15,000 square meter factory and our services.</p>
 							</div>
 						</div>
 						<div class="item-partners">
-							<img class="logo-partners" src="./images/partners/partners9.png" alt="Dragon Innovation">
-							<div class="partbers-info">
+							<div class="logo-partners"><img src="./images/Partners/partners9.png" alt="Dragon Innovation"></div>
+							<div class="partners-info">
 								<h3>Dragon Innovation</h3>
 								<p>Dragon Innovation helps hardware companies of all sizes move from prototype to high-volume production at entrepreneur speed. </p>
 							</div>
 						</div>
 						<div class="item-partners">
-							<img class="logo-partners" src="./images/partners/partners10.png" alt="KMO Applications GmbH">
-							<div class="partbers-info">
+							<div class="logo-partners"><img src="./images/Partners/partners10.png" alt="KMO Applications GmbH"></div>
+							<div class="partners-info">
 								<h3>KMO Applications GmbH</h3>
 								<p>KMO Applications GmbH engaged in projects provide accurate tools for predictive maintenance, data science, software prototyping and respond to any other individual client needs requiring expertise in technology and science.</p>
 							</div>
 						</div>
 						<div class="item-partners">
-							<img class="logo-partners" src="./images/partners/partners11.png" alt="Design Tower Ltd.">
-							<div class="partbers-info">
+							<div class="logo-partners"><img src="./images/Partners/partners11.png" alt="Design Tower Ltd."></div>
+							<div class="partners-info">
 								<h3>Design Tower Ltd.</h3>
 								<p>DESIGN TOWER Ltd. is a UK based professional New Product Development Services firm helping to create, make and sell innovatively engineered and elegantly designed new technologies and products. Design Tower together with Encata offers clients access to a substantial body of world-class engineering product design and innovation competences.</p>
 							</div>
 						</div>
 						<div class="item-partners">
-							<img class="logo-partners" src="./images/partners/partners12.png" alt="Hello Tomorrow">
-							<div class="partbers-info">
+							<div class="logo-partners"><img src="./images/Partners/partners12.png" alt="Hello Tomorrow"></div>
+							<div class="partners-info">
 								<h3>Hello Tomorrow</h3>
 								<p>Hello Tomorrow is a global organisation which aims to unlock the power of emerging technologies to solve our toughest challenges by connecting the science and the industry.</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="dark-back"></div>
+				<div class="column-dark dark-back"></div>
 				<div class="v-light">
 					<p>V</p>
 				</div>
-			</div>
+			</section>
 		</div>
 
 		<div class="container">
-			<div class="snapshot-conditions">
+			<section class="snapshot-conditions dark-back" id="snapshot-conditions">
 				<div class="header">
 					<h2>Snapshot</h2>
 					<p>conditions</p>
@@ -394,17 +476,17 @@
 				<div class="v-dark">
 					<p>V</p>
 				</div>
-			</div>
+			</section>
 		</div>
 
 		<div class="container">
-			<div class="general">
-				<div class="main">
+			<section class="general" id="general">
+				<div class="main white-back">
 					<div class="header">
 						<h2>General</h2>
 						<p>conditions</p>
 					</div>
-					<div class="dark-back">
+					<div class="block-content dark-back">
 						<div class="info">
 							<ul>
 								<li>From direct investment in the project without the fund establishment </li>
@@ -421,135 +503,181 @@
 						</div>
 					</div>
 				</div>
-				<div class="light-back">
+				<div class="white-block white-back">
 					<div class="square"></div>
 				</div>
-			</div>
+			</section>
 		</div>
 
 		<div class="container">
-			<div class="pipeline-other">
-				<div class="dark-line">
+			<section class="pipeline-other" id="projects-other">
+				<div class="dark-line dark-back">
 					<h2>Pipeline</h2>
-					<div class="project">
-						<img src="./images/pipeline1.png" alt="Fir">
-						<h3>FIR</h3>
-						<p>Quick-mounting construction with equipped internal environment</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline2.png" alt="Aerocapsule">	
-						<h3>Aerocapsule</h3>
-						<p>Personal A+ office installed in previously inappropriate places</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline3.png" alt="SmartCork">
-						<h3>SmartCork</h3>
-						<p>A source of precision, data & security of any liquid in any bottle</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline4.png" alt="Cuby">
-						<h3>Cuby</h3>
-						<p>Building technology for high quality, fast construction at honest pricing</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline5.png" alt="IoniteSoil">
-						<h3>Ionite Soil</h3>
-						<p>Ionite soil a new type of nutrient medium for growing plants</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline1.png" alt="Fir">
-						<h3>FIR</h3>
-						<p>Quick-mounting construction with equipped internal environment</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline2.png" alt="Aerocapsule">	
-						<h3>Aerocapsule</h3>
-						<p>Personal A+ office installed in previously inappropriate places</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline3.png" alt="SmartCork">
-						<h3>SmartCork</h3>
-						<p>A source of precision, data & security of any liquid in any bottle</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline4.png" alt="Cuby">
-						<h3>Cuby</h3>
-						<p>Building technology for high quality, fast construction at honest pricing</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline5.png" alt="IoniteSoil">
-						<h3>Ionite Soil</h3>
-						<p>Ionite soil a new type of nutrient medium for growing plants</p>
+					<p class="header-text">other</p>
+					<div class="projects">
+						<div class="project">
+							<img src="./images/Pipline/Other/pipline-other1.png" alt="Energy Ball">
+							<h3>Energy Ball</h3>
+							<p>Energy Ball is an intelligent hand trainer and compact standalone charger for devices</p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/Other/pipline-other2.png" alt="AirZen">	
+							<h3>AirZen</h3>
+							<p>AirZen allows you to create private microclimate keeping away air pollutants </p>
+							<a href="https://youtu.be/csA7_x0HQkA" target="_blank">
+								<div class="link-box">
+									<div class="triangle"></div>
+								</div>
+							</a>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/Other/pipline-other3.png" alt="SmartCup">
+							<h3>SmartCup</h3>
+							<p>This innovative gadget can heat, cool or keep constant temperature for any liquid.</p>
+							<a href="https://vimeo.com/316053108" target="_blank">
+								<div class="link-box">
+									<div class="triangle"></div>
+								</div>
+							</a>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/Other/pipline-other4.png" alt="Shocomate">
+							<h3>Shocomate</h3>
+							<p>This is a 3D printer for chocolate. </p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/Other/pipline-other5.png" alt="Urby">
+							<h3>Urby</h3>
+							<p>Urby is a combination of electrical scooter and skateboard</p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/Other/pipline-other6.png" alt="LETALO">
+							<h3>Letalo</h3>
+							<p>Fully automated drone with self-charging station</p>
+							<a href="https://youtu.be/LgSzqq63Odc" target="_blank">
+								<div class="link-box">
+									<div class="triangle"></div>
+								</div>
+							</a>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/Other/pipline-other7.png" alt="TALENT METER">	
+							<h3>Talent meter</h3>
+							<p>The project aims to create a counter for playing hours on a musical string or wind instrument. In the future and other types </p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/Other/pipline-other8.png" alt="PARK ROAD">
+							<h3>Park road</h3>
+							<p>Park Road is creating a line of serial urban electric bikes of the middle and premium segment with outstanding driving characteristics </p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/Other/pipline-other9.png" alt="ROBOT SNOOKER">
+							<h3>Robot snooker</h3>
+							<p>Robot Snooker is a machine-vision robot that autonomously moves around a billiard table and performs technical actions. </p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/Other/pipline-other10.png" alt="THROMBODYNAMICS">
+							<h3>Thrombodynamics</h3>
+							<p>Thrombodynamics based on a cutting edge 4 D-biochemistry technology, can be used for estimation of severity of procoagulant changes and precise control of anticoagulant therapy</p>
+						</div>
 					</div>
 					<div class="v-dark">
 						<p>V</p>
 					</div>
 				</div>
-				<div class="light-line"></div>
-			</div>
+				<div class="light-line white-back"></div>
+			</section>
 		</div>
 
 		<div class="container">
-			<div class="pipeline-other">
-				<div class="dark-line">
+			<section class="pipeline-other" id="projects-other2">
+				<div class="dark-line dark-back">
 					<h2>Pipeline</h2>
-					<div class="project">
-						<img src="./images/pipeline1.png" alt="Fir">
-						<h3>FIR</h3>
-						<p>Quick-mounting construction with equipped internal environment</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline2.png" alt="Aerocapsule">	
-						<h3>Aerocapsule</h3>
-						<p>Personal A+ office installed in previously inappropriate places</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline3.png" alt="SmartCork">
-						<h3>SmartCork</h3>
-						<p>A source of precision, data & security of any liquid in any bottle</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline4.png" alt="Cuby">
-						<h3>Cuby</h3>
-						<p>Building technology for high quality, fast construction at honest pricing</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline5.png" alt="IoniteSoil">
-						<h3>Ionite Soil</h3>
-						<p>Ionite soil a new type of nutrient medium for growing plants</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline1.png" alt="Fir">
-						<h3>FIR</h3>
-						<p>Quick-mounting construction with equipped internal environment</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline2.png" alt="Aerocapsule">	
-						<h3>Aerocapsule</h3>
-						<p>Personal A+ office installed in previously inappropriate places</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline3.png" alt="SmartCork">
-						<h3>SmartCork</h3>
-						<p>A source of precision, data & security of any liquid in any bottle</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline4.png" alt="Cuby">
-						<h3>Cuby</h3>
-						<p>Building technology for high quality, fast construction at honest pricing</p>
-					</div>
-					<div class="project">
-						<img src="./images/pipeline5.png" alt="IoniteSoil">
-						<h3>Ionite Soil</h3>
-						<p>Ionite soil a new type of nutrient medium for growing plants</p>
+					<p class="header-text">other</p>
+					<div class="projects">
+						<div class="project">
+							<img src="./images/Pipline/pipeline1.png" alt="Fir">
+							<h3>FIR</h3>
+							<p>Quick-mounting construction with equipped internal environment</p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/pipeline2.png" alt="Aerocapsule">	
+							<h3>Aerocapsule</h3>
+							<p>Personal A+ office installed in previously inappropriate places</p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/pipeline3.png" alt="SmartCork">
+							<h3>SmartCork</h3>
+							<p>A source of precision, data & security of any liquid in any bottle</p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/pipeline4.png" alt="Cuby">
+							<h3>Cuby</h3>
+							<p>Building technology for high quality, fast construction at honest pricing</p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/pipeline5.png" alt="IoniteSoil">
+							<h3>Ionite Soil</h3>
+							<p>Ionite soil a new type of nutrient medium for growing plants</p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/pipeline1.png" alt="Fir">
+							<h3>FIR</h3>
+							<p>Quick-mounting construction with equipped internal environment</p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/pipeline2.png" alt="Aerocapsule">	
+							<h3>Aerocapsule</h3>
+							<p>Personal A+ office installed in previously inappropriate places</p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/pipeline3.png" alt="SmartCork">
+							<h3>SmartCork</h3>
+							<p>A source of precision, data & security of any liquid in any bottle</p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/pipeline4.png" alt="Cuby">
+							<h3>Cuby</h3>
+							<p>Building technology for high quality, fast construction at honest pricing</p>
+						</div>
+						<div class="project">
+							<img src="./images/Pipline/pipeline5.png" alt="IoniteSoil">
+							<h3>Ionite Soil</h3>
+							<p>Ionite soil a new type of nutrient medium for growing plants</p>
+						</div>
 					</div>
 					<div class="v-dark">
-						<p>V</p>
+						<p>V</p><!--Спозиционировать V во всех pipeline-other-->
 					</div>
 				</div>
-				<div class="light-line"></div>
-			</div>
+				<div class="light-line white-back"></div>
+			</section>
+		</div>
+
+		<div class="container">
+			<section class="contact" id="contact">
+				<form method="get" class="form-area">
+					<div class="form-1">
+						<p><input type="text" name="your Name *" placeholder="your Name *"></p>
+						<p><input type="email" name="email" placeholder="your e-mail *"></p>
+						<p><input type="text" name="subject" placeholder="subject"></p>
+					</div>	
+					<div class="form-2">
+						<textarea name="Your message *" placeholder="Your message *"></textarea>
+					</div>	
+				</form>
+				<button class="button">Send Message</button>
+				<div class="contact-info">
+					<h3>Oleg Kondrashov</h3>
+					<p><img src="./images/Vector.png" alt="phone">+375 29 305 5941</p>
+					<p><img src="./images/@.png" alt="e-mail">ok@encata.net</p>
+				</div>
+				<div class="v-dark">
+					<p>V</p>
+				</div>
+			</section>
 		</div>
 	</div>
+	<script src="script/scroll.js"></script>
 </body>
 </html>
