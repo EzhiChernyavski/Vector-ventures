@@ -40,7 +40,7 @@ body {
     align-items: center;
     padding: 15px 30px;
     box-sizing: border-box;
-    z-index: 99;
+    z-index: 100;
 }
 
 .navbar h2 {
@@ -82,6 +82,7 @@ body {
     list-style: none;
     opacity: 0.9;
     min-width: 220px;
+    margin-top: 2px;
 }
 
 .links li ul li {
@@ -92,6 +93,11 @@ body {
 
 .links li:hover > ul {
     display: block;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
 }
 
 .container {
@@ -232,6 +238,7 @@ body {
 .aligment {
     width: 400px;
     display: flex;
+    justify-content: center;
     border-right: 12px solid #187FE7;
 }
 
@@ -240,7 +247,6 @@ body {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    margin-left: 70px;
 }
 
 .header-snapshot h2 {
@@ -805,7 +811,7 @@ body {
     height: 230px;
     margin-top: 180px;
     box-sizing: border-box;
-    z-index: 2
+    /* z-index: 1; */
 }
 
 .dark-line .person:nth-child(2) {
@@ -859,8 +865,49 @@ body {
 .team .dark-line .v-dark {
     top: 8px;
     right: -20px;
-    z-index: 1;
 }
+
+.person .person-info {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+}
+
+.person .open-box {
+    display: flex;
+
+}
+
+.person-info {
+    width: 70%;
+    height: 65%; /*Подобрать размер*/
+    background: rgba(0,0,0,.9);
+    z-index: 999;
+}
+
+.person .person-info img {
+    margin: 20px 20px;
+    width: 185px;
+    height: 230px;
+}
+
+.person-info .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.person-info .text h3 {
+    font-size: 30px;
+    color: #187FE7;
+}
+
+.person-info .text p {
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+}
+
 
 
 

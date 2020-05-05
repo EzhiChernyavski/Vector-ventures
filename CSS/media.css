@@ -1,0 +1,152 @@
+@media (max-width: 1024px) {
+	.navbar h2 {
+		font-size: 36px;
+	}
+
+	.links li a {
+		font-size: 14px;
+	}
+
+	.person .person-info {
+		left: 8%;
+	}
+
+	.person-info {
+		width: 85%;
+		height: 60%;
+	}
+}
+
+@media (max-width: 768px) {
+
+	h2 {
+		font-size: 32px;
+	}
+	.nav-toggle {
+		display: block;
+		z-index: 5;
+	}
+
+	.nav-toggle {
+		position: absolute;
+		right: 24px;
+		width: 20px;
+		height: 20px;
+	}
+
+	.nav-toggle.open span,
+	.nav-toggle.open span::before,
+	.nav-toggle.open span::after {
+		background: #187FE7;
+	}
+
+	.nav-toggle span,
+	.nav-toggle span::before,
+	.nav-toggle span::after {
+		position: absolute;
+		top: 9px;
+		right: 0;
+		width: 20px;
+		height: 2px;
+		background: #333;
+		cursor: pointer;
+	}
+
+	.nav-toggle span::before,
+	.nav-toggle span::after {
+		display: block;
+		content: '';
+		top: 0;
+		transition: 0.3s;
+
+	}
+
+	.nav-toggle span::before {
+		transform: translateY(-5px);
+	}
+	
+	.nav-toggle span::after {
+		transform: translateY(5px);
+	}
+
+	.links {
+		/* display: none; */
+		visibility: hidden;
+		position: absolute;
+		top: 0;
+		height: 100vh;
+		width: 50%;
+		right: -50%;
+		background: #fff;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		transition: 0.3s ease-in-out;
+	}
+
+	.links li {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.links li ul {
+		position: relative;
+		display: block;
+	}
+
+	.links li:first-child {
+		margin-bottom: -10px;
+		margin-top: 10px;
+	}
+	
+	.links li ul li {
+		margin-bottom: 0;
+	}
+
+	.backdrop {
+	    display: none;
+	    animation: 0.4s ease-in-out fadenIn forwards;
+	    position: absolute;
+	    width: 100vw;
+	    height: 100vh;
+	    top: 0;
+	    bottom: 0;
+	    right: 0;
+	    left: 0;
+	    background: rgba(0, 0, 0, 0);
+	    cursor: pointer;
+	}
+
+	@keyframes fadenIn {
+	    to {
+	        background: rgba(0, 0, 0, 0.8);
+	    }
+	}
+
+	.open .links {
+		/* display: block;
+		top: 0;
+		height: 100vh;
+		width: 50%; */
+		right: 0;
+		visibility: visible;
+	}
+
+	.open .backdrop {
+		display: block;
+	}
+
+	.nav-toggle.open span::before {
+		transform: rotate(35deg);
+		width: 10px;
+		transform-origin: right bottom;
+	}
+
+	.nav-toggle.open span::after {
+		transform: rotate(-35deg);
+		width: 10px;
+		transform-origin: right top;
+	}
+
+
+}
