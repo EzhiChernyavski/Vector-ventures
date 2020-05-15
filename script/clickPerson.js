@@ -1,6 +1,4 @@
 const persons = document.querySelectorAll('.person');
-const personsInfo = document.querySelectorAll('.person-info');
-
 
 
 persons.forEach((person) => {
@@ -9,13 +7,9 @@ persons.forEach((person) => {
 		persInf.classList.toggle('open-box');
 	});
 
-
+	window.addEventListener('scroll', function() {
+		if (persInf.classList.contains('open-box')) {
+			persInf.classList.remove('open-box');
+		}
+	})
 });
-
-/*if (persInf.classList.contains('open-box')) {
-			window.onclick = function() {
-				persInf.classList.remove('open-box');
-			}
-		} else {
-			persInf.classList.add('open-box');
-		}*/

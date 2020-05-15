@@ -20,10 +20,6 @@ navToggle.addEventListener('click', function() {
 	toggle ();
 });
 
-/*linksWrapper.addEventListener('click', function() {
-	linksWrapper.classList.remove('open');
-});*/
-
 backdrop.addEventListener('click', function() {
 	linksWrapper.classList.remove('open');
 	navToggle.classList.remove('open');
