@@ -10,8 +10,9 @@ window.onscroll = () => {
 	let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 	for (id in sectionPos) {
 		if (sectionPos[id] <= scrollPosition) {
-			document.querySelector('.active').classList.remove('active');
-			/*document.querySelector(`a[href*=${id}]`).classList.add('active');*/
+			document.querySelectorAll('.navbar .active').forEach(function(elem) {
+				elem.classList.remove('active');
+			});
 			activeAllParents(document.querySelector(`a[href*=${id}]`));
 		}	
 	}
@@ -21,7 +22,7 @@ function activeAllParents(elementA) {
 	let parent = elementA.closest('li');
 
 	if (parent) {
-		parent.children[0].classList.add('active');
+		elementA.classList.add('active');
 		
 
 		parent = parent.parentElement.closest('li');

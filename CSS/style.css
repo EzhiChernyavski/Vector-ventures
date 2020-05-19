@@ -180,7 +180,7 @@ body {
 .white-back h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
-    line-height: 61px;
+    line-height: 45px;
     font-weight: 500;
     color: #222222;
     text-transform: capitalize;
@@ -201,7 +201,7 @@ body {
 }
 
 .indent {
-    margin-left: 25px;
+    margin-left: 21px;
 }
 
 .background .big-v {
@@ -310,7 +310,6 @@ body {
 }
 
 .info-invest {
-    /* position: relative; */
     width: 52%;
 }
 
@@ -375,7 +374,6 @@ body {
     grid-gap: 5px;
     align-content: center;
     margin-left: -50px;
-    z-index: 1;
 }
 
 
@@ -413,7 +411,6 @@ body {
 .img-invest .v-dark {
     top: -23px;
     right: 0;
-    z-index: 2;
 }
 
 
@@ -862,17 +859,14 @@ body {
 }
 
 .person .person-info {
+    cursor: auto;
     display: none;
     position: fixed;
     top: 0;
     left: 0;
-}
-
-.person .person-info .back {
-    display: flex;
-    background-color: #fff;
-    width: 65%;
-    height: 300px;
+    width: 100%;
+    height: 100%;
+    z-index: 995;
 }
 
 .person .open-box {
@@ -882,11 +876,19 @@ body {
 
 }
 
-.person-info {
-    width: 100%;
-    height: 100%; /*Подобрать размер*/
-    background: rgba(0,0,0,.8);
-    z-index: 995;
+.person-info .back-close {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .8);
+}
+
+.person .person-info .back {
+    display: flex;
+    background-color: #fff;
+    width: 90%;
+    height: 300px;
+    z-index: 5;
 }
 
 .person .person-info img {
@@ -898,17 +900,20 @@ body {
 .person-info .text {
     display: flex;
     flex-direction: column;
+    padding: 15px;
 }
 
 .person-info .text h3 {
     font-size: 30px;
     color: #187FE7;
+    margin-left: 0;
 }
 
 .person-info .text p {
     font-size: 18px;
     line-height: 20px;
     color: #000;
+    margin-left: 0;
 }
 
 
@@ -1263,7 +1268,6 @@ body {
     font-size: 26px;
     line-height: 22px;
     color: #187FE7;
-    opacity: 0.7;
 }
 
 .pipeline-other .dark-line .v-dark {
@@ -1275,11 +1279,9 @@ body {
 
 
 footer {
-    width: 100%;
-    height: 100%;
     background-color: #272830;
     overflow: hidden;
-    /* box-shadow: 0 0 25px 3px #111; */
+    box-shadow: 0 0 25px 3px #111;
 }
 
 
