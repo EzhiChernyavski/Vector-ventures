@@ -8,6 +8,19 @@
 	}
 }
 
+@media (min-width: 769px) {
+	.links li a:hover,
+	.links li a.active {
+	    color: #187FE7;
+	    border-bottom: 2px solid #187FE7;
+	}
+
+	.links li:hover > ul {
+	    display: block;
+	}
+
+}
+
 @media (max-width: 768px) {
 
 	h2 {
@@ -22,8 +35,8 @@
 	.navbar .nav-toggle {
 		position: absolute;
 		right: 24px;
-		width: 20px;
-		height: 20px;
+		width: 30px;
+		height: 40px;
 	}
 
 	.navbar .nav-toggle.open span,
@@ -36,9 +49,9 @@
 	.navbar .nav-toggle span::before,
 	.navbar .nav-toggle span::after {
 		position: absolute;
-		top: 9px;
+		top: 20px;
 		right: 0;
-		width: 20px;
+		width: 30px;
 		height: 2px;
 		background: #333;
 		cursor: pointer;
@@ -54,11 +67,11 @@
 	}
 
 	.navbar .nav-toggle span::before {
-		transform: translateY(-5px);
+		transform: translateY(-8px);
 	}
 	
 	.navbar .nav-toggle span::after {
-		transform: translateY(5px);
+		transform: translateY(8px);
 	}
 
 	.navbar .links {
@@ -67,14 +80,15 @@
 		height: 100vh;
 		width: 0;
 		right: 0;
+		padding-top: 40px;
 		background: #fff;
 		flex-direction: column;
-		justify-content: center;
 		text-align: center;
 		transition: 0.3s ease-in-out;
 	}
 
 	.navbar .links li {
+		position: relative;
 		margin-right: 0;
 		margin-bottom: 20px;
 	}
@@ -83,13 +97,33 @@
 		font-size: 0px;
 	}
 
-	.navbar .links li ul {
-		position: relative;
+	.navbar .links li span {
+		position: absolute;
 	}
 
-	.navbar .links li:first-child {
-		margin-bottom: -10px;
-		margin-top: 10px;
+	.navbar .links li span::before,
+	.navbar .links li span::after {
+		content: '';
+		position: relative;
+		top: -5px;
+		display: inline-block;
+		background: #ccc;
+		height: 2px;
+		width: 0;
+		transition: 0.3s;
+		z-index: 5;
+	}
+
+	.navbar .links li span::before {
+		transform: rotate(45deg) translateX(3px);
+	}
+
+	.navbar .links li span::after {
+		transform: rotate(-45deg) translateX(-3px);
+	}
+
+	.navbar .links li ul {
+		margin-top: 0;
 	}
 	
 	.navbar .links li ul li {
@@ -117,16 +151,61 @@
 	}
 
 	.navbar .open .links {
-		top: 0;
-		height: 100vh;
 		width: 50%;
-		right: 0;
+	}
+
+	.navbar .links li span.drop::before {
+		transform: rotate(-45deg) translateX(3px);
+	}
+
+	.navbar .links li span.drop::after {
+		transform: rotate(45deg) translateX(-3px);
+	}
+
+	
+	.navbar .open .links .sub-links li{
+		padding: 0;
+	}
+	
+	.navbar .open .links .drop li{
+		padding: 10px 0;
 	}
 
 	.navbar .open .links li a {
-		font-size: 18px;
+		font-size: 22px;
 	}
 
+	.navbar .open .links .sub-links {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+		height: 0px;
+		transition: 0.3s ease-in-out;
+	}
+
+	.navbar .open .links .sub-links a {
+		font-size: 0;
+		transition: 0.3s ease-in-out;
+	}
+
+	.navbar .open .links .sub-links.drop {
+		height: 70%;
+		box-shadow: inset 0px 1px 3px 0px;
+	}
+
+	.navbar .open .links .sub-links.drop a {
+		font-size: 20px;
+	}
+
+	.navbar .open .links li span {
+		margin-left: 10px;
+	}
+
+	.navbar .open .links li span::before,
+	.navbar .open .links li span::after {
+		width: 15px
+	}
 
 	.navbar .open .backdrop {
 		display: block;
@@ -134,13 +213,13 @@
 
 	.navbar .nav-toggle.open span::before {
 		transform: rotate(35deg);
-		width: 10px;
+		width: 15px;
 		transform-origin: right bottom;
 	}
 
 	.navbar .nav-toggle.open span::after {
 		transform: rotate(-35deg);
-		width: 10px;
+		width: 15px;
 		transform-origin: right top;
 	}
 
@@ -175,7 +254,7 @@
 	}
 
 	.invest .gallery {
-		margin-left: -40px;
+		margin-left: -25px;
 	}
 
 
@@ -213,6 +292,7 @@
 	.pipeline .project {
 		height: auto;
 		margin: 20px 25px;
+		left: 10px;
 	}
 
 	.pipeline .line h3,
@@ -335,10 +415,6 @@
 }
 
 @media (max-width: 425px) {
-	.container {
-		margin-bottom: 5px;
-	}
-
 	.navbar .open .links {
 		width: 100%;
 	}
@@ -437,10 +513,43 @@
 		width: 100%;
 	}
 
+	
+
+
 	.invest .gallery {
-		width: 100%;
-		margin-left: 0;
+		display: flex;
+		position: relative;
+		margin: 10px auto;
+		min-width: 0;
+		
 	}
+
+	.gallery {
+		position: relative;
+		height: 300px;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.grid-img {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		z-index: 1;
+		transition: opacity 2s;
+	}
+
+	.showing {
+		opacity: 1;
+		z-index: 2;
+	}
+
+
+	
+
 
 
 
@@ -470,6 +579,13 @@
 
 
 
+
+	.container:nth-child(5) {
+		display: none;
+	}
+
+
+
 	.team .dark-line h2 {
 		left: 40px;
 	}
@@ -492,7 +608,7 @@
 		position: initial;
 	}
 
-	.person .person-info .back {
+	.person .person-info .block-wrapper {
 		display: initial;
 		width: 0;
 		height: 0;
@@ -511,6 +627,10 @@
 	}
 
 	.person-info .back-close {
+		display: none;
+	}
+
+	.person-info .block-wrapper .close-button {
 		display: none;
 	}
 

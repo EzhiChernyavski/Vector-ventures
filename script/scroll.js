@@ -29,8 +29,12 @@ function activeAllParents(elementA) {
 		if (parent) activeAllParents(parent.querySelector('a'));
 	}
 };
-/*------------------------------------------------------------------------------*/
+
+
+
 const links = document.querySelectorAll('a[href^="#"]');
+/*const windowCenter = document.documentElement.clientHeight * 0.5;*/
+
 
 links.forEach((link) => {
 	link.onclick = function(ev) {
@@ -41,8 +45,7 @@ links.forEach((link) => {
 		const scrollTarget = document.getElementById(href);
 		const topOffset = document.querySelector('.navbar').offsetHeight;
 		const elementPosition = scrollTarget.getBoundingClientRect().top;
-		const offsetPosition = elementPosition - topOffset - 25;
-
+		const offsetPosition = elementPosition - topOffset - 5;
 		window.scrollBy({
 			top: offsetPosition,
 			behavior: 'smooth'

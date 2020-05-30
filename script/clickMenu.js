@@ -1,7 +1,7 @@
 const navToggle = document.querySelector('.nav-toggle');
 const linksWrapper = document.querySelector('.links-wrapper');
 const backdrop = document.querySelector('.backdrop');
-const linksCol = linksWrapper.querySelectorAll('a');
+const arrowsMenu = linksWrapper.querySelectorAll('span');
 
 function toggle() {
 	if (linksWrapper.classList.contains('open')) {
@@ -21,16 +21,20 @@ navToggle.addEventListener('click', function() {
 	toggle();
 });
 
-backdrop.addEventListener('click', function() {
-	linksWrapper.classList.remove('open');
-	navToggle.classList.remove('open');
-	backdrop.classList.remove('open');
-});
 
-linksCol.forEach((link) => {
-	link.addEventListener('click', function() {
+linksWrapper.addEventListener('click', function(event) {
+	if (event.target.className == 'backdrop open' || event.target.tagName == 'A') {
 		linksWrapper.classList.remove('open');
 		navToggle.classList.remove('open');
 		backdrop.classList.remove('open');
-	})
+	};
+});
+
+
+arrowsMenu.forEach((arrowMenu) => {
+	let dropMenu = arrowMenu.closest('li').querySelector('.sub-links');
+	arrowMenu.onclick = () => {
+		arrowMenu.classList.toggle('drop');
+		dropMenu.classList.toggle('drop');
+	};
 });

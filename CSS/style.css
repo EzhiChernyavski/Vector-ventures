@@ -69,12 +69,6 @@ body {
     letter-spacing: -0.5px;
 }
 
-.links li a:hover,
-.links li a.active {
-    color: #187FE7;
-    border-bottom: 2px solid #187FE7;
-}
-
 .links li ul {
     display: none;
     position: absolute;
@@ -91,10 +85,10 @@ body {
     margin-right: 0;
 }
 
-.links li:hover > ul {
+/* .links li:hover > ul {
     display: block;
 }
-
+ */
 .nav-toggle {
     display: none;
     cursor: pointer;
@@ -105,7 +99,6 @@ body {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4px;
     margin-bottom: 50px;
     overflow: hidden;
     box-shadow: 0 0 25px 3px #111;
@@ -876,19 +869,53 @@ body {
 
 }
 
+.person-info .open-box{
+    display: block;
+}
+
 .person-info .back-close {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, .9);
 }
 
-.person .person-info .back {
+.person .person-info .block-wrapper {
+    position: relative;
     display: flex;
     background-color: #fff;
-    width: 90%;
+    width: 80%;
     height: 300px;
     z-index: 5;
+}
+
+.person-info .block-wrapper .close-button {
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.block-wrapper .close-button::before,
+.block-wrapper .close-button::after {
+    content: '';
+    position: absolute;
+    top: 13px;
+    display: block;
+    background: #187fe7;
+    height: 3px;
+    width: 30px;
+}
+
+.block-wrapper .close-button::before {
+    transform: rotate(45deg);
+}
+
+.block-wrapper .close-button::after {
+    transform: rotate(-45deg);
 }
 
 .person .person-info img {
@@ -1414,3 +1441,65 @@ input::placeholder {
 .contact .v-dark p {
     font-size: 500px;
 }
+
+
+.pop-up {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 995;
+}
+
+.pop-up iframe {
+    position: relative;
+    border: 0;
+}
+
+.pop-up.open-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up.open-box .back-close {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .9);
+}
+
+
+.pop-up.open-box .close-button {
+    position: absolute;
+    display: block;
+    top: 20px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.pop-up.open-box .close-button::before,
+.pop-up.open-box .close-button::after {
+    content: '';
+    position: absolute;
+    top: 13px;
+    display: block;
+    background: #187fe7;
+    height: 3px;
+    width: 30px;
+}
+
+.pop-up.open-box .close-button::before {
+    transform: rotate(45deg);
+}
+
+.pop-up.open-box .close-button::after {
+    transform: rotate(-45deg);
+}
+
+
+

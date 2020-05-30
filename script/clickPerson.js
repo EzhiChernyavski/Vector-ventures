@@ -1,5 +1,4 @@
 const persons = document.querySelectorAll('.person');
-const backClose = document.querySelector('.back-close');
 
 
 persons.forEach((person) => {
@@ -8,14 +7,10 @@ persons.forEach((person) => {
 	person.addEventListener('click', function() {
 		persInf.classList.add('open-box');
 	});
-
-	backClose.addEventListener('click', function() {
-		persInf.classList.remove('open-box');
-	});
-
-	window.addEventListener('scroll', function() {
-		if (persInf.classList.contains('open-box')) {
+	
+	person.addEventListener('click', function(event) {
+		if (event.target.className == 'close-button' || event.target.className == 'back-close') {
 			persInf.classList.remove('open-box');
-		}
+		};
 	});
 });
