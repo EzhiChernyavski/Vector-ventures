@@ -3,7 +3,7 @@ const sectionPos = {};
 const elemNav = document.querySelector('a[href*="#"]');
 
 sectionArray.forEach((section) => {
-	sectionPos[section.id] = section.offsetTop - 500;
+	sectionPos[section.id] = section.offsetTop - 288;
 });
 
 window.onscroll = () => {
@@ -33,7 +33,7 @@ function activeAllParents(elementA) {
 
 
 const links = document.querySelectorAll('a[href^="#"]');
-/*const windowCenter = document.documentElement.clientHeight * 0.5;*/
+const windowCenter = document.documentElement.clientHeight * 0.5;
 
 
 links.forEach((link) => {
@@ -44,10 +44,11 @@ links.forEach((link) => {
 
 		const scrollTarget = document.getElementById(href);
 		const topOffset = document.querySelector('.navbar').offsetHeight;
-		const elementPosition = scrollTarget.getBoundingClientRect().top;
-		const offsetPosition = elementPosition - topOffset - 5;
+		const centerElem = scrollTarget.getBoundingClientRect().height * 0.5 + 25;
+		const elementPosition = scrollTarget.getBoundingClientRect().top + centerElem;
+		const offsetPosition = elementPosition - topOffset;
 		window.scrollBy({
-			top: offsetPosition,
+			top: offsetPosition - windowCenter,
 			behavior: 'smooth'
 		});
 	}
